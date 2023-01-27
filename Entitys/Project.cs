@@ -31,6 +31,14 @@ namespace DevProjectManagement
             Allocations = new List<Allocation>();
         }
 
+        public Project(string name, DateTime beginning, DateTime endPlanned, DateTime end)
+        {
+            Name = name;
+            Beginning = beginning;
+            EndPlanned = endPlanned;
+            End = end;
+        }
+
         public override string ToString()
         {
             return Name;

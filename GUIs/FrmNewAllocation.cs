@@ -1,5 +1,5 @@
 ﻿using DevProjectManagement;
-using GestaoDesenvolvedoresEProjetos.Repos;
+using DevProjectManagement.Repos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,6 +50,8 @@ namespace DevProjectManagement
 
                 txtDeveloper.Clear();
                 txtProject.Clear();
+                lblDevSelected.Text = string.Empty;
+                lblProjectSelected.Text = string.Empty;
                 // lstDevelopers.Items.Clear();
                 // lstDevelopers.ClearSelected();
                 // lstProjects.Items.Clear();
@@ -58,6 +60,8 @@ namespace DevProjectManagement
                 dtpEnd.Value = DateTime.Now;
                 nupHoursOfWork.Value = 0;
                 txtRemuneration.Clear();
+
+                MessageBox.Show("Saved successfully!", ":D", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception)
             {
@@ -71,16 +75,12 @@ namespace DevProjectManagement
             {
                 lstDevelopers.DataSource = DeveloperRepository.FindByPartialName(txtDeveloper.Text);
             }
-            else
-            {
-                lstDevelopers.Items.Clear();
-            }
         }
 
         private void lstDevelopers_DoubleClick(object sender, EventArgs e)
         {
             Developer d = (Developer)lstDevelopers.SelectedItem;
-            lblDevSelected.Text = "Name: " + d.Name + "\nBirth: " + d.Birth.ToShortDateString() + "\nLevel: "  + d.Level;
+            lblDevSelected.Text = "Name: " + d.Name + "\nBirth: " + d.Birth.ToShortDateString() + "\nLevel: "  + d.LevelDB;
 
         }
 

@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GestaoDesenvolvedoresEProjetos.GUIs
+namespace DevProjectManagement.GUIs
 {
     public partial class FrmAboutMe : Form
     {

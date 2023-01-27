@@ -16,7 +16,7 @@ namespace DevProjectManagement
         {
             InitializeComponent();
             cbxLevel.Items.Add('J');
-            cbxLevel.Items.Add('P');
+            cbxLevel.Items.Add('F');
             cbxLevel.Items.Add('S');
         }
 
@@ -42,9 +42,32 @@ namespace DevProjectManagement
                 }
                 else
                 {
-                    if(txtPassword.Text.Length >= 8 && txtPassword.Text.Length <= 12)
+                    if(txtPassword.Text.Length >= 8 && txtPassword.Text.Length <= 12 && txtEmail != null)
                     {
-                        DeveloperRepository.AddDeveloper(txtName.Text, dtpBirth.Value, Convert.ToChar(cbxLevel.SelectedIndex), txtEmail.Text, txtPassword.Text, cbxActive.Checked, cbxAdmin.Checked);
+                        Developer d = new Developer();
+                        d.Name = txtName.Text;
+                        d.Birth = dtpBirth.Value;
+                        d.Level = Convert.ToChar(cbxLevel.SelectedIndex);
+                        
+                        Credential c = new Credential();
+                        c.Email = txtEmail.Text;
+                        c.Password = txtPassword.Text;
+                        c.Active = cbxActive.Checked;
+                        c.Administrator = cbxAdmin.Checked;
+
+                        d.Credential = c;
+
+                        DeveloperRepository.Save(d);
+
+                        txtName.Clear();
+                        dtpBirth.Value = DateTime.Now;
+                        cbxLevel.SelectedIndex = -1;
+                        txtEmail.Clear();
+                        txtPassword.Clear();
+                        cbxActive.Checked = false;
+                        cbxAdmin.Checked = false;
+
+                        MessageBox.Show("Saved successfully!", ":D", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {

@@ -1,4 +1,4 @@
-﻿namespace GestaoDesenvolvedoresEProjetos.GUIs
+﻿namespace DevProjectManagement.GUIs
 {
     partial class FrmNewProject
     {
@@ -160,6 +160,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(287, 206);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmNewProject";
             this.Text = "FrmNewProject";
             this.panel1.ResumeLayout(false);

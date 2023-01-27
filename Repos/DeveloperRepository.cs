@@ -35,27 +35,6 @@ namespace DevProjectManagement
             }
         }
 
-        public static void AddDeveloper(string name, DateTime birth, char level, string email, string password, bool active, bool admin)
-        {
-            using(Repository dbcontext = new Repository())
-            {
-                Developer d1 = new Developer();
-                d1.Name = name;
-                d1.Birth = birth;
-                d1.Level = level;
-
-                Credential c1 = new Credential();
-                c1.Email = email;
-                c1.Password = password;
-                c1.Active = active;
-                c1.Administrator = admin;
-
-                d1.Credential = c1;
-
-                Save(d1);
-            }
-        }
-
         public static List<Developer> FindByPartialName(string partialName)
         {
             try

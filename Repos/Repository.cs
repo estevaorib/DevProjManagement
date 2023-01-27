@@ -19,6 +19,8 @@ namespace DevProjectManagement
 
         public DbSet<Allocation> Allocations { get; set; }
 
+        public DbSet<Task> Tasks { get; set; }
+
         public Repository() : base(GetDbConnection(), false)
         {
             if (Database.CreateIfNotExists())
@@ -27,12 +29,9 @@ namespace DevProjectManagement
 
                 Developer d = new Developer("Estevão", new DateTime(2006, 11, 23), 'P');
                 Credential c = new Credential("estevao@gmail.com", "asdf1234", true, true);
-                Allocation a = new Allocation(new DateTime(2020, 11, 23), new DateTime(2022, 11, 23), 5, 6000);
-                Project p = new Project();
-                p.Name = "Test";
-                p.Beginning = new DateTime(2020, 10, 23);
-                p.EndPlanned = new DateTime(2022, 10, 23);
-                p.End = new DateTime(2022, 11, 23);
+                Project p = new Project("Test", new DateTime(2020, 10, 23), new DateTime(2020, 10, 23), new DateTime(2022, 11, 23));
+                Allocation a = new Allocation(new DateTime(2020, 11, 23), new DateTime(2022, 11, 23), 5, 60000, d, p);
+                Task t = new Task("Main task");
 
                 d.Credential = c;
                 a.Developer = d;

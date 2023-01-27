@@ -27,17 +27,21 @@ namespace DevProjectManagement
         [Required]
         public Project Project { get; set; }
 
+        public List<Task> Tasks { get; set; }
+
         public Allocation()
         {
            
         }
 
-        public Allocation(DateTime begginning, DateTime end, byte hoursPerWeek, decimal remuneration)
+        public Allocation(DateTime begginning, DateTime end, byte hoursPerWeek, decimal remuneration, Developer developer, Project project)
         {
             Beginning = begginning;
             End = end;
             HoursPerWeek = hoursPerWeek;
             Remuneration = remuneration;
+            Developer = developer;
+            Project = project;
         }
 
         //public override string ToString()

@@ -252,6 +252,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 361);
             this.Controls.Add(this.pnlNewAllocation);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "FrmNewAllocation";
             this.Text = "FrmNewAllocation";
             this.pnlNewAllocation.ResumeLayout(false);

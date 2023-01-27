@@ -1,4 +1,4 @@
-﻿namespace GestaoDesenvolvedoresEProjetos.GUIs
+﻿namespace DevProjectManagement.GUIs
 {
     partial class FrmAboutMe
     {
@@ -36,7 +36,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::GestaoDesenvolvedoresEProjetos.Properties.Resources.WhatsApp_Image_2022_12_16_at_21_13_45;
+            this.pictureBox1.Image = global::DevProjectManagement.Properties.Resources.WhatsApp_Image_2022_12_16_at_21_13_45;
             this.pictureBox1.Location = new System.Drawing.Point(114, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(251, 175);
@@ -61,6 +61,8 @@
             this.ClientSize = new System.Drawing.Size(470, 290);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmAboutMe";
             this.Text = "FrmAboutMe";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

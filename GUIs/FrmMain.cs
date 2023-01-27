@@ -1,4 +1,4 @@
-﻿using GestaoDesenvolvedoresEProjetos.GUIs;
+﻿using DevProjectManagement.GUIs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

@@ -43,7 +43,5 @@ namespace DevProjectManagement
             return null;
             // MessageBox.Show("User not found!");
         }
-
-        
     }
 }

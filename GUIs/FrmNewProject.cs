@@ -1,5 +1,5 @@
 ﻿using DevProjectManagement;
-using GestaoDesenvolvedoresEProjetos.Repos;
+using DevProjectManagement.Repos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GestaoDesenvolvedoresEProjetos.GUIs
+namespace DevProjectManagement.GUIs
 {
     public partial class FrmNewProject : Form
     {
@@ -35,11 +35,20 @@ namespace GestaoDesenvolvedoresEProjetos.GUIs
         {
             try
             {
-                ProjectRepository.AddProject(txtName.Text, dtpBeginning.Value, dtpEndPlanned.Value, dtpEnd.Value);
+                Project p = new Project();
+                p.Name = txtName.Text;
+                p.Beginning = dtpBeginning.Value;
+                p.EndPlanned = dtpEndPlanned.Value;
+                p.End = dtpEnd.Value;
+
+                ProjectRepository.Save(p);
+
                 txtName.Clear();
                 dtpBeginning.Value = DateTime.Now;
                 dtpEndPlanned.Value = DateTime.Now;
                 dtpEnd.Value = DateTime.Now;
+
+                MessageBox.Show("Saved successfully!", ":D", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
             {

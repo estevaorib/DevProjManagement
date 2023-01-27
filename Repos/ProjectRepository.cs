@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestaoDesenvolvedoresEProjetos.Repos
+namespace DevProjectManagement.Repos
 {
     public class ProjectRepository
     {
@@ -32,20 +32,6 @@ namespace GestaoDesenvolvedoresEProjetos.Repos
             catch (Exception)
             {
                 throw;
-            }
-        }
-
-        public static void AddProject(string name, DateTime beginning, DateTime endplanned, DateTime end)
-        {
-            using (Repository dbcontext = new Repository())
-            {
-                Project p = new Project();
-                p.Name = name;
-                p.Beginning = beginning;
-                p.EndPlanned = endplanned;
-                p.End = end;
-
-                Save(p);
             }
         }
 
