@@ -37,27 +37,29 @@ namespace DevProjectManagement
         {
             try
             {
-                if(lstDevelopers.SelectedItems.Count > 0 && lstProjects.SelectedItems.Count > 0)
-                {
-                    AllocationRepository.AddAllocation((Developer)lstDevelopers.SelectedItem, (Project)lstProjects.SelectedItem, dtpBeginning.Value, dtpEnd.Value, Convert.ToByte(nupHoursOfWork.Value), Convert.ToByte(txtRemuneration.Text));
-                    
-                    //txtDeveloper.Clear();
-                    //txtProject.Clear();
-                    //lstDevelopers.Items.Clear();
-                    //lstDevelopers.ClearSelected();
-                    //lstProjects.Items.Clear();
-                    //lstProjects.ClearSelected();
-                    //dtpBeginning.Value = DateTime.Now;
-                    //dtpEnd.Value = DateTime.Now;
-                    //nupHoursOfWork.Value = 0;
-                    //txtRemuneration.Clear();
-                }
-                else
-                {
-                    MessageBox.Show("Select a developer &/or a project!!", "Something went wrong :C", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                Allocation a = new Allocation();
+
+                a.Developer = (Developer) lstDevelopers.SelectedItem;
+                a.Project = (Project) lstProjects.SelectedItem;
+                a.Beginning = dtpBeginning.Value;
+                a.End = dtpEnd.Value;
+                a.HoursPerWeek = Convert.ToByte(nupHoursOfWork.Value);
+                a.Remuneration = Convert.ToByte(txtRemuneration.Text);
+
+                AllocationRepository.Save(a);
+
+                txtDeveloper.Clear();
+                txtProject.Clear();
+                // lstDevelopers.Items.Clear();
+                // lstDevelopers.ClearSelected();
+                // lstProjects.Items.Clear();
+                // lstProjects.ClearSelected();
+                dtpBeginning.Value = DateTime.Now;
+                dtpEnd.Value = DateTime.Now;
+                nupHoursOfWork.Value = 0;
+                txtRemuneration.Clear();
             }
-            catch(Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Fill all parameters!", "Something went wrong :C", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -77,7 +79,9 @@ namespace DevProjectManagement
 
         private void lstDevelopers_DoubleClick(object sender, EventArgs e)
         {
-            lblDevSelected.Text = lstDevelopers.SelectedItem.ToString();
+            Developer d = (Developer)lstDevelopers.SelectedItem;
+            lblDevSelected.Text = "Name: " + d.Name + "\nBirth: " + d.Birth.ToShortDateString() + "\nLevel: "  + d.Level;
+
         }
 
         private void txtProject_TextChanged(object sender, EventArgs e)
@@ -87,7 +91,9 @@ namespace DevProjectManagement
 
         private void lstProjects_DoubleClick(object sender, EventArgs e)
         {
-            lblProjectSelected.Text = lstProjects.SelectedItem.ToString();
+            Project p = (Project)lstProjects.SelectedItem;
+            lblProjectSelected.Text = "Name: " + p.Name + "\nBeginning: " + p.Beginning.ToShortDateString() + "\nEnd: " + p.End.ToShortDateString() + "\nEnd Planned: " + p.EndPlanned.ToShortDateString();
         }
     }
 }
+

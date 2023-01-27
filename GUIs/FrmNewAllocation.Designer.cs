@@ -58,7 +58,7 @@
             this.pnlNewAllocation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlNewAllocation.Location = new System.Drawing.Point(0, 0);
             this.pnlNewAllocation.Name = "pnlNewAllocation";
-            this.pnlNewAllocation.Size = new System.Drawing.Size(490, 320);
+            this.pnlNewAllocation.Size = new System.Drawing.Size(490, 361);
             this.pnlNewAllocation.TabIndex = 0;
             // 
             // gpbNewAllocation
@@ -83,7 +83,7 @@
             this.gpbNewAllocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbNewAllocation.Location = new System.Drawing.Point(13, 13);
             this.gpbNewAllocation.Name = "gpbNewAllocation";
-            this.gpbNewAllocation.Size = new System.Drawing.Size(465, 295);
+            this.gpbNewAllocation.Size = new System.Drawing.Size(465, 336);
             this.gpbNewAllocation.TabIndex = 0;
             this.gpbNewAllocation.TabStop = false;
             this.gpbNewAllocation.Text = "New Allocation";
@@ -91,7 +91,7 @@
             // nupHoursOfWork
             // 
             this.nupHoursOfWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nupHoursOfWork.Location = new System.Drawing.Point(349, 207);
+            this.nupHoursOfWork.Location = new System.Drawing.Point(349, 248);
             this.nupHoursOfWork.Name = "nupHoursOfWork";
             this.nupHoursOfWork.Size = new System.Drawing.Size(110, 22);
             this.nupHoursOfWork.TabIndex = 17;
@@ -99,7 +99,7 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(349, 265);
+            this.btnSave.Location = new System.Drawing.Point(349, 306);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(110, 24);
             this.btnSave.TabIndex = 16;
@@ -109,7 +109,7 @@
             // 
             // txtRemuneration
             // 
-            this.txtRemuneration.Location = new System.Drawing.Point(290, 236);
+            this.txtRemuneration.Location = new System.Drawing.Point(290, 277);
             this.txtRemuneration.Name = "txtRemuneration";
             this.txtRemuneration.Size = new System.Drawing.Size(169, 22);
             this.txtRemuneration.TabIndex = 15;
@@ -118,7 +118,7 @@
             // 
             this.lblRemuneration.AutoSize = true;
             this.lblRemuneration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRemuneration.Location = new System.Drawing.Point(248, 241);
+            this.lblRemuneration.Location = new System.Drawing.Point(248, 282);
             this.lblRemuneration.Name = "lblRemuneration";
             this.lblRemuneration.Size = new System.Drawing.Size(36, 16);
             this.lblRemuneration.TabIndex = 14;
@@ -128,7 +128,7 @@
             // 
             this.lblHoursOfWork.AutoSize = true;
             this.lblHoursOfWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoursOfWork.Location = new System.Drawing.Point(248, 209);
+            this.lblHoursOfWork.Location = new System.Drawing.Point(248, 250);
             this.lblHoursOfWork.Name = "lblHoursOfWork";
             this.lblHoursOfWork.Size = new System.Drawing.Size(95, 16);
             this.lblHoursOfWork.TabIndex = 12;
@@ -175,7 +175,7 @@
             // dtpEnd
             // 
             this.dtpEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpEnd.Location = new System.Drawing.Point(46, 236);
+            this.dtpEnd.Location = new System.Drawing.Point(46, 277);
             this.dtpEnd.Name = "dtpEnd";
             this.dtpEnd.Size = new System.Drawing.Size(168, 22);
             this.dtpEnd.TabIndex = 7;
@@ -184,7 +184,7 @@
             // 
             this.lblEnd.AutoSize = true;
             this.lblEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnd.Location = new System.Drawing.Point(6, 241);
+            this.lblEnd.Location = new System.Drawing.Point(6, 282);
             this.lblEnd.Name = "lblEnd";
             this.lblEnd.Size = new System.Drawing.Size(34, 16);
             this.lblEnd.TabIndex = 6;
@@ -193,7 +193,7 @@
             // dtpBeginning
             // 
             this.dtpBeginning.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBeginning.Location = new System.Drawing.Point(82, 207);
+            this.dtpBeginning.Location = new System.Drawing.Point(82, 248);
             this.dtpBeginning.Name = "dtpBeginning";
             this.dtpBeginning.Size = new System.Drawing.Size(132, 22);
             this.dtpBeginning.TabIndex = 5;
@@ -202,7 +202,7 @@
             // 
             this.lblBeginning.AutoSize = true;
             this.lblBeginning.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBeginning.Location = new System.Drawing.Point(6, 207);
+            this.lblBeginning.Location = new System.Drawing.Point(6, 248);
             this.lblBeginning.Name = "lblBeginning";
             this.lblBeginning.Size = new System.Drawing.Size(70, 16);
             this.lblBeginning.TabIndex = 4;
@@ -250,7 +250,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 320);
+            this.ClientSize = new System.Drawing.Size(490, 361);
             this.Controls.Add(this.pnlNewAllocation);
             this.Name = "FrmNewAllocation";
             this.Text = "FrmNewAllocation";

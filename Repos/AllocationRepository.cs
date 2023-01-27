@@ -35,24 +35,5 @@ namespace DevProjectManagement
                 throw;
             }
         } 
-        
-        public static void AddAllocation(Developer developer, Project project, DateTime beginning, DateTime end, byte hours, decimal remuneration)
-        {
-            using(Repository dbcontext = new Repository())
-            {
-                if(developer.Id != 0)
-                {
-                    Allocation a1 = new Allocation();
-                    a1.Developer = developer;
-                    a1.Project = project;
-                    a1.Beginning = beginning;
-                    a1.End = end;
-                    a1.HoursPerWeek = hours;
-                    a1.Remuneration = remuneration;
-
-                    Save(a1);
-                }
-            }
-        }
     }
 }

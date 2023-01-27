@@ -57,13 +57,13 @@ namespace DevProjectManagement
                 MessageBox.Show("Fill all parameters!", "Something went wrong :C", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            txtName.Clear();
-            dtpBirth.Value = DateTime.Now;
-            cbxLevel.SelectedIndex = 0;
-            txtEmail.Clear();
-            txtPassword.Clear();
-            cbxActive.Checked = false;
-            cbxAdmin.Checked = false;
+            //txtName.Clear();
+            //dtpBirth.Value = DateTime.Now;
+            //cbxLevel.SelectedIndex = 0;
+            //txtEmail.Clear();
+            //txtPassword.Clear();
+            //cbxActive.Checked = false;
+            //cbxAdmin.Checked = false;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

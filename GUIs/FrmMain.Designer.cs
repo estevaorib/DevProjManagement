@@ -50,7 +50,7 @@
             this.mnuAllocations});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(583, 24);
+            this.mnuMain.Size = new System.Drawing.Size(609, 24);
             this.mnuMain.TabIndex = 1;
             this.mnuMain.Text = "menuStrip1";
             // 
@@ -103,7 +103,7 @@
             // mnuAddNewProject
             // 
             this.mnuAddNewProject.Name = "mnuAddNewProject";
-            this.mnuAddNewProject.Size = new System.Drawing.Size(180, 22);
+            this.mnuAddNewProject.Size = new System.Drawing.Size(121, 22);
             this.mnuAddNewProject.Text = "Add new";
             this.mnuAddNewProject.Click += new System.EventHandler(this.addNewToolStripMenuItem1_Click);
             // 
@@ -118,7 +118,7 @@
             // mnuAddNewAllocation
             // 
             this.mnuAddNewAllocation.Name = "mnuAddNewAllocation";
-            this.mnuAddNewAllocation.Size = new System.Drawing.Size(180, 22);
+            this.mnuAddNewAllocation.Size = new System.Drawing.Size(121, 22);
             this.mnuAddNewAllocation.Text = "Add new";
             this.mnuAddNewAllocation.Click += new System.EventHandler(this.mnuAddNewAllocation_Click);
             // 
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 404);
+            this.ClientSize = new System.Drawing.Size(609, 442);
             this.Controls.Add(this.mnuMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
