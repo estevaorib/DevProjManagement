@@ -44,11 +44,12 @@ namespace DevProjectManagement
             Allocations = new List<Allocation>();
         }
 
-        public Developer(string name, DateTime birth, char level)
+        public Developer(string name, DateTime birth, char level, Credential credential)
         {
             Name = name;
             Birth = birth;
             Level = level;
+            Credential = credential;
         }
 
         public override String ToString()

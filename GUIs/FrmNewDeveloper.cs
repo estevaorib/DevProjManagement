@@ -47,7 +47,7 @@ namespace DevProjectManagement
                         Developer d = new Developer();
                         d.Name = txtName.Text;
                         d.Birth = dtpBirth.Value;
-                        d.Level = Convert.ToChar(cbxLevel.SelectedIndex);
+                        d.Level = Convert.ToChar(cbxLevel.Text);
                         
                         Credential c = new Credential();
                         c.Email = txtEmail.Text;
@@ -56,6 +56,7 @@ namespace DevProjectManagement
                         c.Administrator = cbxAdmin.Checked;
 
                         d.Credential = c;
+                        c.Developer = d;
 
                         DeveloperRepository.Save(d);
 
@@ -79,14 +80,6 @@ namespace DevProjectManagement
             {
                 MessageBox.Show("Fill all parameters!", "Something went wrong :C", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-            //txtName.Clear();
-            //dtpBirth.Value = DateTime.Now;
-            //cbxLevel.SelectedIndex = 0;
-            //txtEmail.Clear();
-            //txtPassword.Clear();
-            //cbxActive.Checked = false;
-            //cbxAdmin.Checked = false;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

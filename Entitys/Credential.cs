@@ -17,6 +17,7 @@ namespace DevProjectManagement
 
         public Int32 Id { get; set; }
 
+        [Required]
         [Index(IsUnique = true)]
         [StringLength(250)]
         public String Email { get; set; }

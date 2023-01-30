@@ -27,8 +27,8 @@ namespace DevProjectManagement
             {
                 Repository repository = this;
 
-                Developer d = new Developer("Estevão", new DateTime(2006, 11, 23), 'P');
                 Credential c = new Credential("estevao@gmail.com", "asdf1234", true, true);
+                Developer d = new Developer("Estevão", new DateTime(2006, 11, 23), 'P', c);
                 Project p = new Project("Test", new DateTime(2020, 10, 23), new DateTime(2020, 10, 23), new DateTime(2022, 11, 23));
                 Allocation a = new Allocation(new DateTime(2020, 11, 23), new DateTime(2022, 11, 23), 5, 60000, d, p);
                 Task t = new Task("Main task");

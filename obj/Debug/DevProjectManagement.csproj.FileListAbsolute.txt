@@ -252,15 +252,15 @@ C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\bin\Debug\System.
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\DevProjectManagement.csproj.AssemblyReference.cache
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\DevProjectManagement.csproj.SuggestedBindingRedirects.cache
-C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\GestaoDesenvolvedoresEProjetos.GUIs.FrmAboutMe.resources
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\DevProjectManagement.FrmLogin.resources
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\DevProjectManagement.FrmMain.resources
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\DevProjectManagement.FrmNewAllocation.resources
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\DevProjectManagement.FrmNewDeveloper.resources
-C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\GestaoDesenvolvedoresEProjetos.GUIs.FrmNewProject.resources
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\GestaoDesenvolvedoresEProjetos.Properties.Resources.resources
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\DevProjectManagement.csproj.GenerateResource.cache
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\DevProjectManagement.csproj.CoreCompileInputs.cache
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\DevProjectManagement.csproj.CopyComplete
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\GestaoDesenvolvedoresEProjetos.exe
 C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\GestaoDesenvolvedoresEProjetos.pdb
+C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\DevProjectManagement.GUIs.FrmAboutMe.resources
+C:\Users\taina\Documents\Estevao\Dev-Project-Management-master\obj\Debug\DevProjectManagement.GUIs.FrmNewProject.resources
